@@ -11,6 +11,8 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 cp -Rf /tmp/src/*.html ./
+echo "$(date +%Y-%m-%d)" > ./info.html
+echo "this is $HTTPS_VERSION" >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
