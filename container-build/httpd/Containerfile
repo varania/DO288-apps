@@ -22,7 +22,7 @@ EXPOSE 8080
 #RUN rm -rf /run/httpd && mkdir /run/httpd
 
 # Run as the root user
-USER 1001
+USER ex288
 
 # Launch httpd
 CMD /usr/sbin/httpd -DFOREGROUND
