@@ -17,7 +17,7 @@ EXPOSE 80
 RUN rm -rf /run/httpd && mkdir /run/httpd
 
 # Run as the root user
-USER ex288
+USER 1001
 
 # Launch httpd
 CMD /usr/sbin/httpd -DFOREGROUND
